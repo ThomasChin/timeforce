@@ -11,5 +11,8 @@ class Activity(UUIDModel, TimeStampedModel):
     owner = models.ForeignKey(User, related_name="activities", on_delete=models.CASCADE)
     # Add chart foreign key later.
 
+    class Meta:
+        verbose_name_plural = "Activities"
+
 
 # Goal Model
